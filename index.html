@@ -3,61 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timb Tudor</title>
+    <title>Your Name - Personal Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 25px;
+            height: 25px;
+            transition: transform 0.2s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .container {
+            width: 90%;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            padding: 1rem;
             background-color: #f4f4f4;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
+
+        footer p {
+            margin: 0;
+            color: #555;
         }
-        nav {
-            margin: 1rem 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        section {
-            margin: 2rem 0;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            .social-icons {
+                margin-top: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Timb Tudor</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <h1>Your Name</h1>
+        <div class="social-icons">
+            <a href="https://twitter.com/" target="_blank" title="X"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_X_%28formerly_Twitter%29.svg" alt="X Icon"></a>
+            <a href="https://rumble.com/" target="_blank" title="Rumble"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Rumble.com_logo.svg" alt="Rumble Icon"></a>
+            <a href="https://youtube.com/" target="_blank" title="YouTube"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Icon"></a>
+            <a href="https://telegram.org/" target="_blank" title="Telegram"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon"></a>
+        </div>
     </header>
 
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>I'm a highly competent individual with a strong work ethic and determination. My unmatched perspicacity matched with sheer indefatigability makes me a feared opponent in every real of human endeavor.</p>
+            <p>Write a brief introduction about yourself here. Include information about your background, interests, and any other relevant details.</p>
         </section>
 
         <section id="portfolio">
